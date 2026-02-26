@@ -1,0 +1,25 @@
+[project]
+name = "void_masters"
+version = "0.1.0"
+description = "void-masters using crewAI"
+authors = [{ name = "Your Name", email = "you@example.com" }]
+requires-python = ">=3.10,<3.14"
+dependencies = [
+    "crewai[litellm,tools]==1.9.3",
+]
+
+[project.scripts]
+void_masters = "void_masters.main:run"
+run_crew = "void_masters.main:run"
+train = "void_masters.main:train"
+replay = "void_masters.main:replay"
+test = "void_masters.main:test"
+run_with_trigger = "void_masters.main:run_with_trigger"
+serve = "void_masters.main:serve"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.crewai]
+type = "crew"

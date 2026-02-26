@@ -1,0 +1,23 @@
+compose_story:
+  description: |
+    Write a short RPG story campaign set in a {age} world.
+    Include the following characters: {names}.
+      Ensure the story is engaging and suitable for an RPG campaign.
+      a narrative very oriented for the RPG master to use as a chapter in their campaign. with some interjection points for the players to interact with the story. The story should have a dramatic twist or an unresolved threat at the end to keep players engaged.
+  expected_output: "A compelling RPG story campaign with the specified characters and setting."
+  agent: story_builder
+compose_characters:
+  description: |
+    Create detailed character profiles for each name in {names}.
+    Include motivations, backgrounds, and relationships.
+    Ensure characters are distinct and drive the narrative.
+  expected_output: "A list of character profiles with rich details."
+  agent: character_builder
+revise_story:
+  description: |
+    Review the RPG story for coherence, engagement, and depth.
+    Enhance narrative flow and ensure a compelling conclusion.
+    Ensure the story has a dramatic twist or unresolved threat at the end.
+    Share the character's lores and after the full story as well.
+  expected_output: "A refined RPG story that is coherent, engaging, and has a compelling conclusion. Also share the character's lores and after the full story as well."
+  agent: story_reviser

@@ -1,0 +1,7 @@
+.env
+__pycache__/
+.DS_Store
+
+# generated output
+craft_results/
+report.md
